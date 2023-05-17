@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Book</title>
+</head>
+<body>
+<h2>Add a new book to the catalog</h2>
+
+<form action="/addbook" method="post">
+    Title: <input type="text" name="title" value="{{ title }}" required><br>
+    Author: <input type="text" name="author" value="{{ author }}" required><br>
+    Page Count: <input type="text" name="pgcount" value="{{ pagecount }}" required><br>
+    Rating: <input type="text" name="avg_rating" value="{{ rating }}" required><br>
+    ISBN: <input type="text" name="isbn" value="{{ isbn }}" required><br>
+    
+    <input type="submit" value="Add Book">
+</form>
+
+</body>
+</html>
+

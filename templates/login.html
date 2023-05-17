@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Log in</title>
+</head>
+<body>
+
+<!-- Show a message if login credentials are incorrect -->
+{% if message %}
+<h2>{{ message }}</h2>
+{% endif %}
+<br><br>
+
+<form action="/login" method="post">
+    User: <input type="text" name="user">
+    Password: <input type="password" name="password">
+    <input type="submit" value="Login">
+</form>
+
+</body>
+</html>
