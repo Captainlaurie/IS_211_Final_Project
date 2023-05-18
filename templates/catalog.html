@@ -14,6 +14,7 @@
         <td>Pages</td>
         <td>Rating</td>
         <td>ISBN</td>
+        <td>Image</td>
         <td>Delete?</td>
     </tr>
     {% for row in books %}
@@ -23,6 +24,7 @@
         <td>{{ row['pgcount'] }}</td>
         <td>{{ row['avg_rating'] }}</td>
         <td>{{ row['isbn'] }}</td>
+        <td><img src="{{ row['image'] }}"></td>
         <td><a href="/deletebook/{{ row['bookid'] }}">Delete</a></td>
     </tr>
     {% endfor %}

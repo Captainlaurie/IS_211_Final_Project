@@ -12,6 +12,6 @@ if __name__ == "__main__":
         
         cur.execute("DROP TABLE IF EXISTS books")
         
-        cur.execute("""CREATE TABLE books (bookid INTEGER PRIMARY KEY, title TEXT, author TEXT, pgcount INT, avg_rating REAL, isbn TEXT)""")
+        cur.execute("""CREATE TABLE books (bookid INTEGER PRIMARY KEY, title TEXT, author TEXT, pgcount INT, avg_rating REAL, isbn TEXT, image TEXT)""")
         
 
